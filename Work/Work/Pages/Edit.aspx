@@ -45,7 +45,7 @@
                   </select>
         </div>
 
-        <asp:Button ID="Button3"   runat="server" OnClick="Edit_Confirm" Text="Сохранить" />
+        <asp:Button ID="Button3"   runat="server" OnClick="Edit_Confirm_Click" Text="Сохранить" />
         <asp:Button ID="Button4" runat="server" OnClick="Button2_Click" Text="Отмена" />
 
     </form>

@@ -21,25 +21,23 @@
                     <td><h3>Язык</h3></td>
                     <td><h3>Отдел</h3></td>
                 </tr>
-            <%
-                foreach (Work.Models.Worker worker in GetWorkers())
-                {
-                    Response.Write(String.Format(@"
-                        <div class='item'>                 
-                        <tr>
-                            <td>{0}</td>
-                             <td> {1}</td>
-                             <td>{2}</td>  
-<td>{3}</td>   
-<td>{4}</td>     
-<td><button name='edit'  runat='server' OnClick='Edit_Click'> Изменить  </button>    
-<button name='delete'  OnClick='Delete_Click' > Удалить  </button></td>                   
-                       ", worker.Name, worker.Surname, worker.Age, worker.lang_id, worker.department_id));
-
-                }
-            %>
+                <asp:Repeater ItemType="Work.Models.Worker"
+                SelectMethod="GetWorkers" runat="server">
+            <ItemTemplate>
+                <tr class="item">
+                    <td><%# Item.Name %></td>
+                    <td><%# Item.Surname %></td>
+                    <td><%# Item.Age %></td>
+                    <td><%# Item.department_id %></td>
+                    <td><%# Item.lang_id %></td>
+<td><asp:Button ID="btnEdit" Runat="server" OnClick="Edit_Click" Text="Редактировать"></asp:Button></td>
+                </tr>
+            </ItemTemplate>
+        </asp:Repeater>
             </table>
         </div>
     </form>
 </body>
 </html>
+
+

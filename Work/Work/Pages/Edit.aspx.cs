@@ -46,7 +46,7 @@ namespace Work.Pages
     .GetVirtualPath(null, "AddCancel", null).VirtualPath);
         }
 
-        protected void Edit_Click(object sender, EventArgs e)
+        protected void Edit_Confirm_Click(object sender, EventArgs e)
         {
             InsertWorker();
             Response.Redirect(RouteTable.Routes

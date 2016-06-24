@@ -34,3 +34,4 @@ c:\users\user\documents\visual studio 2015\Projects\Work\Work\bin\EntityFramewor
 c:\users\user\documents\visual studio 2015\Projects\Work\Work\bin\EntityFramework.SqlServer.dll
 c:\users\user\documents\visual studio 2015\Projects\Work\Work\bin\EntityFramework.xml
 c:\users\user\documents\visual studio 2015\Projects\Work\Work\bin\EntityFramework.SqlServer.xml
+c:\users\user\documents\visual studio 2015\Projects\Work\Work\obj\Debug\Work.csprojResolveAssemblyReference.cache

@@ -14,7 +14,7 @@ namespace Work.Pages
     {
         private Repository repository = new Repository();
 
-        protected IEnumerable<Worker> GetWorkers()
+        public IEnumerable<Worker> GetWorkers()
         {
             return repository.Workers;
         }
