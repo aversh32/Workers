@@ -1,0 +1,39 @@
+﻿body {
+    font-family: Cambria, Georgia, "Times New Roman"; 
+    margin: 0;
+}
+
+div#header div.title, div.item h3, div.item h4, div.pager a {
+    font: bold 1em "Arial Narrow", "Franklin Gothic Medium", Arial;
+}
+div#header { 
+    background-color: #444; 
+    border-bottom: 2px solid #111; 
+    color: white;
+}
+div#header div.title { 
+    font-size: 2em; 
+    padding: .6em;
+}
+
+table
+{
+    width:100%;
+    border-collapse:collapse;
+    border:5px ;
+}
+
+table tr{
+
+}
+
+table td{
+    border-collapse:collapse;
+    border:2px solid ;
+    border-color:black;
+    text-align: center;
+}
+
+table td h3{
+    text-align: center;
+}
